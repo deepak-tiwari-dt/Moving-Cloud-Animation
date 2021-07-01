@@ -1,0 +1,27 @@
+#clouds {
+  background-image: url("clouds-mf.jpg");
+  background-size: cover;
+}
+
+#sky {
+  overflow: hidden;
+}
+
+#clouds {
+  width: 200%;
+  height: 950px;
+  background-image: url("clouds-mf.jpg");
+  background-size: cover;
+  -webkit-animation: movingclouds 25s linear infinite;
+  -moz-animation: movingclouds 25s linear infinite;
+  -o-animation: movingclouds 25s linear infinite;
+}
+
+@keyframes movingclouds {
+  0% {
+    margin-left: 0%;
+  }
+  100% {
+    margin-left: -100%;
+  }
+}
